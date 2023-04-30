@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <style>
+        /*настройки стилей страницы*/
+        
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+        /*делаем чёрный фон и выравниваем всё по центру*/
+        
+        body {
+            background: rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /*толщина обводки холста — 1 пиксель, белый цвет*/
+        
+        canvas {
+            border: 1px solid white;
+        }
+    </style> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="loginPage" style="display: none11;">
+        <div class="logo">TETRIS</div>
+        <div class="info">Для того чтобы подключится введите свой никнейм и IP-адрес хоста</div>
+        <div class="inputLabel">
+            <input type="text" class="nicknameInput inputLogin" placeholder="Введите ваш никнейм">
+            <button class="nickBtn loginBtn">Сохранить</button></div>
+        <div class="inputLabel">
+
+            <input type="text" class="ip_input inputLogin" placeholder="Введие IP" value="192.168.43.25">
+            <!-- <input type="text" class="ip_input inputLogin" n placeholder="Введие IP" value="192.168.1.6"> -->
+            <!-- <input type="text" class="ip_input" placeholder="Введие IP" value="192.168.1.6"> -->
+            <button class="btn_ip loginBtn">Подключится к IP.</button>
+
+        </div>
+    </div>
+    <div class="gamePage">
+        <div class="tetrisWrap">
+            <div id="tetris"></div>
+            <div class="name yourName">Вы</div>
+            <div class="yourStat stat">
+                <div class="yourLastScore lastScore"></div>
+                <div class="yourMaxScore maxScore"></div>
+            </div>
+        </div>
+        <div class="tetrisWrap">
+            <div class="fieldOpponent"></div>
+            <div class="name opponentName">Противник</div>
+            <div class="opponentStat stat">
+                <div class="opponentLastScore lastScore"></div>
+                <div class="opponentMaxScore maxScore"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./client.js"></script>
+
+</body>
+
+</html>
